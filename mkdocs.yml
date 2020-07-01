@@ -1,0 +1,50 @@
+site_name: 文章
+site_author: cht
+theme:
+    features:
+        - tabs
+    name: material
+    language: 'zh'
+    palette:
+        primary: 'teal'
+        accent: 'amber'
+        scheme: 'slate'
+    font:
+        text: Ubuntu
+        code: Ubuntu Mono
+extra:
+    search:
+        language: 'zh'
+markdown_extensions:
+    - meta
+    - admonition # 注解
+    - pymdownx.details # 折叠需要的
+    - footnotes # 脚注
+    - pymdownx.critic # 强调
+    - pymdownx.inlinehilite # 行内代码高亮
+    - pymdownx.superfences # 注解嵌套代码块
+    - pymdownx.smartsymbols # 特殊符号
+    - codehilite # 代码高亮
+    - toc:
+        permalink: true
+nav:
+    - 主页:
+        - 更新日志: index.md
+        - 写作想法: other/写作想法.md
+        - 阅读日志: other/阅读日志.md
+    - 随笔: 
+        - 家乡-夏日 20.2.5: 家乡-夏日.md
+        - 武汉疫情小记 20.1.25: 武汉疫情小记.md
+        - 家乡-杨梅 20.1.23-20.1.26: 家乡-杨梅.md
+        - 我与书香工大 19.12.19: 我与书香工大.md
+        - 毅行记 19.11.26: 毅行记.md
+        - 看见 19.11.6: 看见.md
+        - 向日葵 19.10.31: 向日葵.md
+        - 碎片整理 19.10.27: 碎片整理.md
+    - 创作:
+        - 儿童节的礼物 20.5.29: 小说-儿童节的礼物.md
+        - 五叶星:
+            - 异星空间 20.2.27-20.3.16: 五叶星-异星空间.md
+            - 苍蓝星 20.6.30: 五叶星-苍蓝星.md
+    - 日常:
+        - 日常: 日常.md
