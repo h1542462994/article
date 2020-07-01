@@ -1,0 +1,785 @@
+
+
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <meta name="author" content="cht">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+    
+    
+      
+        <title>看见 19.11.6 - 文章</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.fe0cca5b.min.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a46bcfb3.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#009688">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700%7CUbuntu+Mono&display=fallback">
+        <style>body,input{font-family:"Ubuntu",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="文章" class="md-header-nav__button md-logo" aria-label="文章">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            文章
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              看见 19.11.6
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href=".." class="md-tabs__link">
+          主页
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../%E5%AE%B6%E4%B9%A1-%E5%A4%8F%E6%97%A5/" class="md-tabs__link md-tabs__link--active">
+          随笔
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../%E5%B0%8F%E8%AF%B4-%E5%84%BF%E7%AB%A5%E8%8A%82%E7%9A%84%E7%A4%BC%E7%89%A9/" class="md-tabs__link">
+          创作
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../%E6%97%A5%E5%B8%B8/" class="md-tabs__link">
+          日常
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="文章" class="md-nav__button md-logo" aria-label="文章">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    文章
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      主页
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="主页" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        主页
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href=".." title="更新日志" class="md-nav__link">
+      更新日志
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../other/%E5%86%99%E4%BD%9C%E6%83%B3%E6%B3%95/" title="写作想法" class="md-nav__link">
+      写作想法
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../other/%E9%98%85%E8%AF%BB%E6%97%A5%E5%BF%97/" title="阅读日志" class="md-nav__link">
+      阅读日志
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      随笔
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="随笔" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        随笔
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E5%AE%B6%E4%B9%A1-%E5%A4%8F%E6%97%A5/" title="家乡-夏日 20.2.5" class="md-nav__link">
+      家乡-夏日 20.2.5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E6%AD%A6%E6%B1%89%E7%96%AB%E6%83%85%E5%B0%8F%E8%AE%B0/" title="武汉疫情小记 20.1.25" class="md-nav__link">
+      武汉疫情小记 20.1.25
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E5%AE%B6%E4%B9%A1-%E6%9D%A8%E6%A2%85/" title="家乡-杨梅 20.1.23-20.1.26" class="md-nav__link">
+      家乡-杨梅 20.1.23-20.1.26
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E6%88%91%E4%B8%8E%E4%B9%A6%E9%A6%99%E5%B7%A5%E5%A4%A7/" title="我与书香工大 19.12.19" class="md-nav__link">
+      我与书香工大 19.12.19
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E6%AF%85%E8%A1%8C%E8%AE%B0/" title="毅行记 19.11.26" class="md-nav__link">
+      毅行记 19.11.26
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        看见 19.11.6
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="看见 19.11.6" class="md-nav__link md-nav__link--active">
+      看见 19.11.6
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    正文
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    草稿
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E5%90%91%E6%97%A5%E8%91%B5/" title="向日葵 19.10.31" class="md-nav__link">
+      向日葵 19.10.31
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E7%A2%8E%E7%89%87%E6%95%B4%E7%90%86/" title="碎片整理 19.10.27" class="md-nav__link">
+      碎片整理 19.10.27
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      创作
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="创作" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        创作
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E5%B0%8F%E8%AF%B4-%E5%84%BF%E7%AB%A5%E8%8A%82%E7%9A%84%E7%A4%BC%E7%89%A9/" title="儿童节的礼物 20.5.29" class="md-nav__link">
+      儿童节的礼物 20.5.29
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      五叶星
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="五叶星" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        五叶星
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E4%BA%94%E5%8F%B6%E6%98%9F-%E5%BC%82%E6%98%9F%E7%A9%BA%E9%97%B4/" title="异星空间 20.2.27-20.3.16" class="md-nav__link">
+      异星空间 20.2.27-20.3.16
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E4%BA%94%E5%8F%B6%E6%98%9F-%E8%8B%8D%E8%93%9D%E6%98%9F/" title="苍蓝星 20.6.30" class="md-nav__link">
+      苍蓝星 20.6.30
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      日常
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="日常" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        日常
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E6%97%A5%E5%B8%B8/" title="日常" class="md-nav__link">
+      日常
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    正文
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    草稿
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <div class="admonition success">
+<p class="admonition-title">类型：随笔 已停止更新</p>
+<p><strong>2019.11.6</strong> 完成正文</p>
+</div>
+<h1 id="_1">看见<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">正文<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>一次偶然的机会，我会jy约好去印象城看《天气之子》(Weathering with you)，之前，我仅知这是一部日漫电影。除了学校组织的几场之外，我很少去电影城看电影。</p>
+<p>我并不喜欢逛街，和jy在印象城瞎逛感觉挺尴尬的，也不知有什么值得一逛的店。最后我还是随着她到了言又几书店，新开的，比新华书店要温馨一点。我们都喜欢看书，在新书区查看一番后，她随即翻开了《I hava a dream》，我们靠在一起，一页页翻着，从企鹅变成高跟鞋，线条之间错落的变换，显得非常有趣。</p>
+<p><img alt="图片" src="../img/201911%E7%9C%8B%E8%A7%81-%E5%9B%BE%E7%89%871.jpg" /></p>
+<p>我没有意识到时间的流逝，很快电影就要播出了，于是归还了书，拍了照留了个纪念。这家书店，等我有空时候，还要再逛逛。</p>
+<p>位置刚刚好，我收好了平板，享受这两小时的宁静时光。</p>
+<p>觉得每一帧都是一张壁纸，特别是看到夕阳穿破厚厚的云层，照射在阳台的时候，那是一个老奶奶的生日。在阴雨连绵的日本，放晴应是一件稀罕的事。</p>
+<p>开头，阳菜走到最高的阳台之上，获得了让天气放晴的能力。帆高，一个离家出走的男孩，为了梦想奔波于日本，却不受到待见，难以维持生计。阳菜偷偷塞给帆高一个汉堡，从此开始了两人的日本之旅。也就是“定制天气”的工作之旅。</p>
+<p>似乎人们的心情是紧紧与天气联系着的，天气放晴是，日本的民众们就格外的高兴。就这样，两人收到了一封封“定制天气”的请求信，在为工作奔波。不久，阳菜就觉得晴女的工作实在是太累了，便暂停了工作。</p>
+<p>让我感到疑惑的是，是整个故事的结尾，帆高牺牲了让阳菜献祭，归还日本放晴的机会，将阳菜从天空拉了回来。日本恢复了连日阴雨的天气。</p>
+<p>我便在想，这值得吗？</p>
+<p>也许，对于一个旁观者，帆高不愿牺牲阳菜，没能给他们带来好的天气。有很多群众都认为他们“自私”，甚至都在指责、声讨他的行为。却无法理解帆高在失去至爱之人的痛苦。</p>
+<p>日本，对于帆高来说，并不是他想象的一样，是一座可以实现梦想的城市，人们都在奔波于工作之中，对帆高冷漠相待。日本，对于帆高来说，并不重要。</p>
+<p>也许，对于一个旁观者，警察只认为帆高就是在违反劳动基本法，认为他做的就是一件胡闹的事情，他们不会知道，最后，帆高在和命运做抗争，正在为实现他的梦想而不屑奋斗。</p>
+<p>对于我们来说，我们很轻易的就带入了自己的角色，从而忽略了个体的感受。忽略了他们作为一个个体的感受和信念。</p>
+<p>我想，对于帆高来说，这是值得的。</p>
+<p>这和资产家为了提高自己的利益，不顾雇员的身心，企图通过提高薪资来解决问题，并没有什么区别。他们是不会意识到，雇员作为一个独立的个体，也是需要情感关注的。</p>
+<p>在繁华的东京，人们的幸福指数，并没有随着人们物质生活的丰富而得到相应的提高。相反，电影所展现的，是一种效率第一的社会，它给人们带了了巨大的生活压力。高速发展的社会，切断了人们与自然的相互联系。</p>
+<p>我们大多数情况下能看到的，都是宏观的性质，无论是GDP、还是销售额，都只能反映一个维度的特征。而人们生活的幸福度，不能仅仅通过这些宏观的特征来体现。</p>
+<p>PS: 这篇文章原本打算昨天写法发文的，但是做完花了很多时间凑了些字，我对此不是很满意。这篇文章纯属代表我个人的观念。</p>
+<p>我大概想说的，就是我们要警惕自己的“双标”行为，毕竟“己所不欲，勿施于人”是非常有道理的。这部电影，剧情安排还是相当不错的，但表现的手法有点过于夸张了一些，但对于一部日漫电影来说，也是无可厚非的。</p>
+<p>我写文章都是随缘的，大概每篇文章都得构思好一会儿，也许我太多没写过文章了。</p>
+<h2 id="_3">草稿<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>纯粹记录一下周末的日常。感悟大概是我们不应该仅仅站在自己的立场上看待问题。还有就是探讨一下当今的社会现状问题。顺便也提及我们能够理解的东西往往收到我们认知水平的限制。</p>
+<p>有言眼见为实，却不知道我们能够看见的，大多数受到我们观念的限制。我们所了解的，也未必是原貌。</p>
+<p>一次偶然的机会，我和jy约好去印象城看《天气之子》(Weathering with you)，在这之前，我仅知这是一篇日漫电影。在此之前，除学校组织之外，便很少去电影馆看电影了。</p>
+<p>不过我不太喜欢逛街，和jy在印象城逛也总是感觉挺尴尬的，也不太关注有什么值得一逛的店。最后我还是随着她到了言又几书店，新开的一家店，感觉比新华书店温馨。我们两个都喜欢书，随即翻开了《I hava a dream》，靠在一起，看企鹅变成高跟鞋，线条之间错落有致的变换，觉得非常有趣。这便是最好的时光了。</p>
+<p>很快，我们发现电影快要播出了，于是归还了书，拍下照留了纪念。我想，这书店，我还会来吗？不知。</p>
+<p>位置刚刚合适，我收好了平板，享受这一周以来难得的两个小时的宁静。</p>
+<p>电影的画面很美，音效配音也是无可挑剔。只不过，我似乎不太理解，帆高为什么要为了女主，放弃让日本放晴的机会。这个，大概是与我们的家国文化相抵触的。</p>
+<p>也许，对于一个旁观者，帆高是“自私”的，我们只看到了它放弃了日本的晴天，却无法理解帆高内心承受的痛苦。</p>
+<p>也许，对于一个旁观者，警察仅仅认为小孩就是胡闹，逃逸，却无法理解他正在和命运做抗争。</p>
+<p>也许，对于一个旁观者，女主只是在工作，她在阴雨连绵的日子里，带来了晴天，却无法理解她这么做带来的后果。</p>
+<p>对于他们，看到的也只是他们所理解的东西，对于我们所不理解的，大概会认为其是荒诞的，有违常理的。</p>
+<p>似乎，我们很轻易的认为，事情就是我们所看见的那样。实际上并不是。</p>
+<p>电影的主线其实非常简单，就是帆高和阳菜一路人以“定制天气”工作的日常。但只要细心便会发现，东京的物质繁华，并没有真正的带来人类情感的释放。</p>
+<p>相反，在繁华的都市中，“物质化社会”现象非常严重。效率至上，纯粹理性的社会，带给了人们巨大的生活压力。高速发展的社会，切断了人们与自然的联系。</p>
+<p>而有些人们，却轻易的相信数字，认为数字是具体的，能够反映事物的所有特征。他们却忘记了，社会是由一个个不一样的个体构成的。</p>
+<p>也许，对于一个旁观者，我们看到的是GDP的增长，却很少能够看到，GDP增长的背后是一代代人的辛勤劳动，以及环境的日益恶化。</p>
+<p>我们所能看到的，并不一定是全部。</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../%E6%AF%85%E8%A1%8C%E8%AE%B0/" title="毅行记 19.11.26" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  上一页
+                </span>
+                毅行记 19.11.26
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../%E5%90%91%E6%97%A5%E8%91%B5/" title="向日葵 19.10.31" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  下一页
+                </span>
+                向日葵 19.10.31
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ["tabs"],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
