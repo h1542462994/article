@@ -1,52 +1,64 @@
-site_name: 文章
+site_name: article
 site_author: cht
+repo_url: https://github.com/h1542462994/article
+repo_name: h1542462994/article
 theme:
-    features:
-        - tabs
-    name: material
-    language: 'zh'
-    palette:
-        primary: 'teal'
-        accent: 'amber'
-        scheme: 'slate'
-    font:
-        text: Ubuntu
-        code: Ubuntu Mono
+  features: 
+    - navigation.tabs
+  name: material
+  language: 'zh'
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+      primary: teal
+      accent: deep orange
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mod
+      primary: amber
+      accent: cyan
+  font:
+    text: Roboto
+    code: Roboto Mono
 extra:
-    search:
-        language: 'zh'
+  search:
+    language: 'zh'
 markdown_extensions:
-    - meta
-    - admonition # 注解
-    - pymdownx.details # 折叠需要的
-    - footnotes # 脚注
-    - pymdownx.critic # 强调
-    - pymdownx.inlinehilite # 行内代码高亮
-    - pymdownx.superfences # 注解嵌套代码块
-    - pymdownx.smartsymbols # 特殊符号
-    - codehilite # 代码高亮
-    - toc:
-        permalink: true
+  - meta
+  - admonition # 注解
+  - pymdownx.details # 折叠需要的
+  - footnotes # 脚注
+  - pymdownx.critic # 强调
+  - pymdownx.inlinehilite # 行内代码高亮
+  - pymdownx.superfences # 注解嵌套代码块
+  - pymdownx.smartsymbols # 特殊符号
+  - codehilite # 代码高亮
 nav:
-    - 主页:
-        - 更新日志: index.md
-        - 写作想法: other/写作想法.md
-        - 阅读日志: other/阅读日志.md
-    - 随笔: 
-        - 家乡-夏日 20.2.5: 随笔/家乡-夏日.md
-        - 武汉疫情小记 20.1.25: 随笔/武汉疫情小记.md
-        - 家乡-杨梅 20.1.23-20.1.26: 随笔/家乡-杨梅.md
-        - 我与书香工大 19.12.19: 随笔/我与书香工大.md
-        - 毅行记 19.11.26: 随笔/毅行记.md
-        - 看见 19.11.6: 随笔/看见.md
-        - 向日葵 19.10.31: 随笔/向日葵.md
-        - 碎片整理 19.10.27: 随笔/碎片整理.md
-    - 创作:
-        - 儿童节的礼物 20.5.29: 创作/小说-儿童节的礼物.md
-        - 五叶星:
-            - 异星空间 20.2.27-20.3.16: 创作/五叶星/五叶星-异星空间.md
-            - 苍蓝星 20.6.30: 创作/五叶星/五叶星-苍蓝星.md
-        - 原神:
-            - 原神-提瓦特游记 21.5.10: 创作/原神/原神-提瓦特游记.md
-    - 日常:
-        - 日常: 日常.md
+  - Home:
+    - 更新日志: index.md
+    - 写作想法: other/写作想法.md
+    - 阅读日志: other/阅读日志.md
+  - Essay: 
+    - 家乡-夏日 20.2.5: essay/家乡-夏日.md
+    - 武汉疫情小记 20.1.25: essay/武汉疫情小记.md
+    - 家乡-杨梅 20.1.23-20.1.26: essay/家乡-杨梅.md
+    - 我与书香工大 19.12.19: essay/我与书香工大.md
+    - 毅行记 19.11.26: essay/毅行记.md
+    - 看见 19.11.6: essay/看见.md
+    - 向日葵 19.10.31: essay/向日葵.md
+    - 碎片整理 19.10.27: essay/碎片整理.md
+  - Novel:
+    - 儿童节的礼物 20.5.29: novel/小说-儿童节的礼物.md
+    - 五叶星:
+      - 异星空间 20.2.27-20.3.16: novel/五叶星/五叶星-异星空间.md
+      - 苍蓝星 20.6.30: novel/五叶星/五叶星-苍蓝星.md
+    - 原神:
+      - 原神-提瓦特游记 21.5.10: novel/原神/原神-提瓦特游记.md
+  - Tattle:
+    - 星穹杂谈:
+      - 星穹杂谈（1）回合制真的是落后的吗？: tattle/星穹杂谈1.md
